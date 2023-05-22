@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/1684701367.ico" type="image/x-icon">
+    <title>InstaPet</title>
+</head>
+<body>
+<H1>InstaPet</H1>   
+<h2>La red social de las mascotas</h2>
+
+
+
+<form id="registro" method="post" action="https://formspree.io/f/mzbqqbge">
+
+    <label for="nombre"> Nombre de la Mascota: <input type="text" name="username" required placeholder="NOMBRE DE LA MASCOTA">  </label><br>
+    <label for="edad"> Edad de la Mascota: <input type="number" name="edad" required placeholder="EDAD DE LA MASCOTA"> </label> <br>
+    <label for="color"> Color de la Mascota: </label> <input id="Color_mascota"type="color" name="color" required placeholder="COLOR DE LA MASCOTA"> <br>
+    <label for="mail"> Email de la Mascota: <input type="email" name="email" required placeholder="EMAIL"> </label> <br>
+    <label for="contraseña"> Elige una Contraseña: <input type="password" name="password" required placeholder="CONTRASEÑA"> </label> <br>
+    <label for="tipo">¿Que animal es tu mascota?</label>
+    <select name="tipo" id="tipo">
+       <option value="perro">Perro</option>
+       <option value="gato" >Gato</option>
+       <option value="cobayo">Cobayo</option>
+       <option value="otro">Otro</option>
+    </select><br>
+    <label><input name="genero" type="radio" value="M" required> Masculino</label>
+    <label><input name="genero" type="radio" value="F" required> Femenino </label><br>
+    <label for="contanos">Cuentanos mas sobre tu mascota:</label><br>
+    <textarea id="contar" 
+    rows="10" 
+    placeholder="¿Cuáles son sus comidas y juegos favoritos?"
+    ></textarea><br>
+    <label for="checkbox">Acepto las bases y condiciones. </label>
+    <input id="checkbox" name="terminoycondi" type="checkbox" value="consent" required> 
+    <br>
+    <input type="submit" name="enviar" id="boton"> <br>
+
+</form>
+
+</body>
+</html>
